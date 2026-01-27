@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#1A1C22] text-white overflow-hidden px-4 sm:px-6 lg:px-8 py-20">
+    <section className="relative min-h-screen flex flex-col items-center justify-center  text-white overflow-hidden px-4 sm:px-6 lg:px-8 py-20">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Top left geometric lines */}
