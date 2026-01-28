@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Aboutus = () => {
   return (
-    <section id="about" className="relative bg-[#1A1C22] text-white py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <section id="about" className="relative  text-white py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content Side */}
