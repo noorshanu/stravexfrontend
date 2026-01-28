@@ -77,7 +77,7 @@ const HowItWorks = () => {
       y: 0,
       scale: 1,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 100,
         damping: 15,
       },
@@ -93,7 +93,7 @@ const HowItWorks = () => {
       scale: 1,
       rotate: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 200,
         damping: 15,
         delay: 0.2,
@@ -103,7 +103,7 @@ const HowItWorks = () => {
       scale: 1.1,
       rotate: 5,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 400,
         damping: 10,
       },
