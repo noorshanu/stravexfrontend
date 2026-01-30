@@ -44,19 +44,19 @@ const Hero = () => {
         </div> */}
 
         {/* Main Heading */}
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          Compete on Market Skill.
+        <h2 className="text-4xl sm:text-[80px]  font-extrabold mb-6 leading-tight">
+          Compete on Market
           <br />
-          <span className="text-white">Not Luck.</span>
+       Skill Not Luck.
         </h2>
 
         {/* Description */}
-        <p className="text-lg sm:text-xl md:text-2xl text-[#CCCCCC] mb-4 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-sm sm:text-base  text-[#CCCCCC] mb-4 max-w-3xl mx-auto leading-relaxed">
           Stravex is a gamified prediction market where players build crypto portfolios, compete in live matches, and rank based on real market performance.
         </p>
 
         {/* Tagline */}
-        <p className="text-base sm:text-lg md:text-xl text-[#CCCCCC] mb-10 font-medium">
+        <p className="text-sm sm:text-base  text-[#CCCCCC] mb-10 font-medium">
           Predict trends. Allocate capital. Outperform others.
         </p>
 
@@ -72,7 +72,7 @@ const Hero = () => {
       </div>
 
       {/* Risk Disclosure */}
-      <div className="relative z-10 mt-auto pt-8">
+      <div className="relative z-10 mt-auto pt-3">
         <p className="text-xs sm:text-sm text-[#888888] text-center max-w-2xl mx-auto">
           Risk Disclosure: All outcomes are based on real market movements. Practice mode is for learning only.
         </p>
