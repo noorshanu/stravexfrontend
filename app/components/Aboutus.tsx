@@ -58,16 +58,15 @@ const Aboutus = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#00F0FF]/20 via-[#8A2BE2]/20 to-[#00E699]/20 rounded-2xl blur-3xl transform rotate-6"></div>
               
               {/* Image container with glow effect */}
-              <div className="relative w-full h-full rounded-2xl overflow-hidden border border-[#8A2BE2]/30 shadow-2xl shadow-[#8A2BE2]/20">
+              <div className="relative w-full h-full">
                 <Image
-                  src="/btc.avif"
+                  src="/bag.png"
                   alt="Bitcoin cryptocurrency"
                   fill
                   className="object-cover"
                   priority
                 />
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1A1C22]/60 via-transparent to-transparent"></div>
+
               </div>
 
               {/* Floating decorative elements */}

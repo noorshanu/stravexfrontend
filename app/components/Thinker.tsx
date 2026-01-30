@@ -75,7 +75,7 @@ const Thinker = () => {
   }
 
   return (
-    <section className="relative bg-gradient-to-b from-[#1A1C22] via-[#1F2128] to-[#1A1C22] text-white py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative text-white py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Gradient Orbs */}

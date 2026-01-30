@@ -11,8 +11,9 @@ export default function Home() {
   <>
             <Navbar />
             <Hero />
+              <HowItWorks />
             <Aboutus />
-            <HowItWorks />
+          
             <CoreProduct />
             <Thinker />
             <Footer />

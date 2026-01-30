@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
+
+
 body {
-  background-color: #070808;
+  background-color: #0B0B0F;
+  font-family: 'Inter', sans-serif;
+  color: white;
 }
+
+
+
+
+
+.hero-bg{
+  background-image: url('/bg.png');  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+

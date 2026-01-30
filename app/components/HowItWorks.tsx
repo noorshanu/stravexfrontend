@@ -1,60 +1,62 @@
-'use client'
+"use client";
 
-import React from 'react'
-import { motion } from 'framer-motion'
-import { 
-  FaSearch, 
-  FaWallet, 
-  FaTrophy, 
-  FaChartLine,
-  FaCoins,
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaSearch,
+  FaWallet,
+  FaTrophy,
   FaUsers,
-  FaMedal
-} from 'react-icons/fa'
+} from "react-icons/fa";
 
 const HowItWorks = () => {
   const steps = [
     {
-      number: '01',
+      number: "01",
       icon: FaSearch,
-      title: 'Discover Market Opportunities',
-      description: 'Each match features a curated set of trending crypto assets.',
-      gradientFrom: '#00F0FF',
-      gradientTo: '#00E699',
-      bgColor: 'bg-[#00F0FF]/10',
-      borderColor: 'border-[#00F0FF]/30',
+      title: "Discover Market Opportunities",
+      description:
+        "Each match features a curated set of trending crypto assets.",
+      bgColor: "bg-[#1A1B23]",
+      borderColor: "border-[#1A1B23]",
+      gradientFrom: "#00E699",
+      gradientTo: "#00F0FF",
     },
     {
-      number: '02',
+      number: "02",
       icon: FaWallet,
-      title: 'Build Your Portfolio',
-      description: 'Choose assets and allocate capital using a fixed virtual balance.',
-      gradientFrom: '#8A2BE2',
-      gradientTo: '#00F0FF',
-      bgColor: 'bg-[#8A2BE2]/10',
-      borderColor: 'border-[#8A2BE2]/30',
+      title: "Build Your Portfolio",
+      description:
+        "Choose assets and allocate capital using a fixed virtual balance.",
+      bgColor: "bg-[#1A1B23]",
+      borderColor: "border-[#1A1B23]",
+      gradientFrom: "#00F0FF",
+      gradientTo: "#8A2BE2",
     },
     {
-      number: '03',
+      number: "03",
       icon: FaUsers,
-      title: 'Compete in Live Matches',
-      description: 'Portfolios are locked. Markets move. Rankings update in real time.',
-      gradientFrom: '#00E699',
-      gradientTo: '#8A2BE2',
-      bgColor: 'bg-[#00E699]/10',
-      borderColor: 'border-[#00E699]/30',
+      title: "Compete in Live Matches",
+      description:
+        "Portfolios are locked. Markets move. Rankings update in real time.",
+
+      bgColor: "bg-[#1A1B23]",
+      borderColor: "border-[#1A1B23]",
+      gradientFrom: "#8A2BE2",
+      gradientTo: "#FF6B9D",
     },
     {
-      number: '04',
+      number: "04",
       icon: FaTrophy,
-      title: 'Rank by Performance',
-      description: 'Players are ranked by portfolio PnL percentage at match end.',
-      gradientFrom: '#8A2BE2',
-      gradientTo: '#00E699',
-      bgColor: 'bg-[#8A2BE2]/10',
-      borderColor: 'border-[#8A2BE2]/30',
+      title: "Rank by Performance",
+      description:
+        "Players are ranked by portfolio PnL percentage at match end.",
+      bgColor: "bg-[#1A1B23]",
+      borderColor: "border-[#1A1B23]",
+      gradientFrom: "#FF6B9D",
+      gradientTo: "#00E699",
     },
-  ]
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -64,36 +66,36 @@ const HowItWorks = () => {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const cardVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 50,
-      scale: 0.9
+      scale: 0.9,
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       scale: 1,
       transition: {
-        type: 'spring' as const,
+        type: "spring" as const,
         stiffness: 100,
         damping: 15,
       },
     },
-  }
+  };
 
   const iconVariants = {
-    hidden: { 
+    hidden: {
       scale: 0,
       rotate: -180,
     },
-    visible: { 
+    visible: {
       scale: 1,
       rotate: 0,
       transition: {
-        type: 'spring' as const,
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
         delay: 0.2,
@@ -103,15 +105,18 @@ const HowItWorks = () => {
       scale: 1.1,
       rotate: 5,
       transition: {
-        type: 'spring' as const,
+        type: "spring" as const,
         stiffness: 400,
         damping: 10,
       },
     },
-  }
+  };
 
   return (
-    <section id="how-it-works" className="relative bg-[#1A1C22] text-white py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section
+      id="how-it-works"
+      className="relative  text-white "
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#8A2BE2]/5 rounded-full blur-3xl"></div>
@@ -119,24 +124,7 @@ const HowItWorks = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Simple Rules.{' '}
-            <span className="bg-gradient-to-r from-[#00F0FF] to-[#8A2BE2] bg-clip-text text-transparent">
-              Serious Strategy.
-            </span>
-          </h2>
-          <p className="text-lg sm:text-xl text-[#CCCCCC] max-w-2xl mx-auto mt-6">
-            No mid-game actions. No randomness. Just decisions and outcomes.
-          </p>
-        </motion.div>
+
 
         {/* Cards Grid */}
         <motion.div
@@ -147,7 +135,7 @@ const HowItWorks = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
         >
           {steps.map((step, index) => {
-            const IconComponent = step.icon
+            const IconComponent = step.icon;
             return (
               <motion.div
                 key={index}
@@ -155,28 +143,28 @@ const HowItWorks = () => {
                 whileHover={{ y: -10 }}
                 className="relative group"
               >
-                <div className={`
+                <div
+                  className={`
                   relative h-full p-6 sm:p-8 rounded-2xl border-2 ${step.borderColor}
                   ${step.bgColor} backdrop-blur-sm
                   transition-all duration-300
                   hover:border-opacity-60 hover:shadow-2xl
                 `}
-                style={{
-                  boxShadow: '0 0 0 0 rgba(0, 0, 0, 0)',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = `0 25px 50px -12px ${step.gradientTo}33`
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 0 0 0 rgba(0, 0, 0, 0)'
-                }}
+                  style={{
+                    boxShadow: "0 0 0 0 rgba(0, 0, 0, 0)",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.boxShadow = `0 25px 50px -12px 33`;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.boxShadow =
+                      "0 0 0 0 rgba(0, 0, 0, 0)";
+                  }}
                 >
                   {/* Number Badge */}
-                  <div 
-                    className="absolute -top-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg"
-                    style={{
-                      background: `linear-gradient(135deg, ${step.gradientFrom}, ${step.gradientTo})`,
-                    }}
+                  <div
+                    className="absolute -top-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg bg-[#1A1B23] inset-shadow-lg"
+
                   >
                     {step.number}
                   </div>
@@ -187,12 +175,9 @@ const HowItWorks = () => {
                     whileHover="hover"
                     className="mb-6 flex justify-center"
                   >
-                    <div 
-                      className="w-16 h-16 rounded-xl flex items-center justify-center shadow-lg"
-                      style={{
-                        background: `linear-gradient(135deg, ${step.gradientFrom}, ${step.gradientTo})`,
-                        boxShadow: `0 10px 25px -5px ${step.gradientTo}50`,
-                      }}
+                    <div
+                      className="w-16 h-16 flex items-center justify-center shadow-lg rounded-full bg-[#1A1B23] border border-[#7c7c7c]"
+
                     >
                       <IconComponent className="text-white text-2xl" />
                     </div>
@@ -207,7 +192,7 @@ const HowItWorks = () => {
                   </p>
 
                   {/* Decorative gradient on hover */}
-                  <div 
+                  <div
                     className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300 -z-10"
                     style={{
                       background: `linear-gradient(135deg, ${step.gradientFrom}, ${step.gradientTo})`,
@@ -228,12 +213,31 @@ const HowItWorks = () => {
                   </div>
                 )}
               </motion.div>
-            )
+            );
           })}
+        </motion.div>
+
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16 mt-10"
+        >
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            Simple Rules.{" "}
+            <span className="bg-gradient-to-r from-[#00F0FF] to-[#8A2BE2] bg-clip-text text-transparent">
+              Serious Strategy.
+            </span>
+          </h2>
+          <p className="text-lg sm:text-xl text-[#CCCCCC] max-w-2xl mx-auto mt-6">
+            No mid-game actions. No randomness. Just decisions and outcomes.
+          </p>
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HowItWorks
+export default HowItWorks;

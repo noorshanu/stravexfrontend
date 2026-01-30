@@ -3,7 +3,7 @@ import { FaTwitter, FaDiscord, FaGithub, FaLinkedin, FaTelegram } from 'react-ic
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className=" text-gray-300">
       {/* CTA Section */}
       <div className="border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

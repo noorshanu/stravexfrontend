@@ -1,74 +1,39 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
-
 import React from 'react'
+import LiquidEther from './LiquidEther'
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center  text-white overflow-hidden px-4 sm:px-6 lg:px-8 py-20">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Top left geometric lines */}
-        <div className="absolute top-20 left-0 w-64 h-64 opacity-20">
-          <svg viewBox="0 0 200 200" className="w-full h-full">
-            <line x1="0" y1="50" x2="150" y2="50" stroke="#CCCCCC" strokeWidth="1" />
-            <line x1="0" y1="100" x2="150" y2="100" stroke="#CCCCCC" strokeWidth="1" />
-            <line x1="0" y1="150" x2="150" y2="150" stroke="#CCCCCC" strokeWidth="1" />
-          </svg>
-        </div>
-
-        {/* Bottom left line graph */}
-        <div className="absolute bottom-32 left-8 w-48 h-32 opacity-30">
-          <svg viewBox="0 0 200 100" className="w-full h-full">
-            <defs>
-              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#00F0FF" />
-                <stop offset="100%" stopColor="#00E699" />
-              </linearGradient>
-            </defs>
-            <polyline
-              points="10,80 30,70 50,60 70,50 90,40 110,35 130,30 150,25 170,20"
-              fill="none"
-              stroke="url(#lineGradient)"
-              strokeWidth="2"
-            />
-            {/* Small bar chart elements */}
-            <rect x="180" y="60" width="8" height="20" fill="#666" opacity="0.5" />
-            <rect x="190" y="70" width="8" height="10" fill="#666" opacity="0.5" />
-          </svg>
-        </div>
-
-        {/* Top right bar chart */}
-        <div className="absolute top-24 right-8 w-40 h-32 opacity-30">
-          <svg viewBox="0 0 200 100" className="w-full h-full">
-            <rect x="20" y="60" width="15" height="30" fill="#666" />
-            <rect x="45" y="50" width="15" height="40" fill="#666" />
-            <rect x="70" y="40" width="15" height="50" fill="#00E699" />
-            <rect x="95" y="55" width="15" height="35" fill="#666" />
-            <rect x="120" y="45" width="15" height="45" fill="#666" />
-            {/* Three horizontal lines above */}
-            <line x1="20" y1="20" x2="135" y2="20" stroke="#CCCCCC" strokeWidth="1" />
-            <line x1="20" y1="25" x2="135" y2="25" stroke="#CCCCCC" strokeWidth="1" />
-            <line x1="20" y1="30" x2="135" y2="30" stroke="#CCCCCC" strokeWidth="1" />
-          </svg>
-        </div>
-
-        {/* Bottom right star/diamond */}
-        <div className="absolute bottom-24 right-12 w-16 h-16 opacity-20">
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <polygon
-              points="50,10 60,40 90,40 70,60 80,90 50,75 20,90 30,60 10,40 40,40"
-              fill="#CCCCCC"
-              stroke="#CCCCCC"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
+    <section className="relative min-h-screen flex flex-col items-center justify-center text-white overflow-x-hidden  px-4 sm:px-6 lg:px-8 py-20 hero-bg">
+      {/* LiquidEther Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <LiquidEther
+          colors={['#5227FF', '#FF9FFC', '#B19EEF']}
+          mouseForce={20}
+          cursorSize={100}
+          isViscous
+          viscous={30}
+          iterationsViscous={32}
+          iterationsPoisson={32}
+          resolution={0.5}
+          isBounce={false}
+          autoDemo
+          autoSpeed={0.5}
+          autoIntensity={2.2}
+          takeoverDuration={0.25}
+          autoResumeDelay={3000}
+          autoRampDuration={0.6}
+        />
       </div>
+
+
+  <img src="/bg.png" alt=""  className='absolute inset-0 w-full h-full'/>
 
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Logo */}
-        <div className="mb-8 flex justify-center">
+        {/* <div className="mb-8 flex justify-center">
           <div className="relative">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
               <span className="bg-gradient-to-r from-[#00F0FF] to-[#8A2BE2] bg-clip-text text-transparent">
@@ -76,7 +41,7 @@ const Hero = () => {
               </span>
             </h1>
           </div>
-        </div>
+        </div> */}
 
         {/* Main Heading */}
         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">

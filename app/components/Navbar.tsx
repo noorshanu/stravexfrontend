@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+      <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm border-b border-[#595959] bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -37,28 +37,26 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#how-it-works" className="text-white hover:text-white transition-colors text-sm">
                 How It Works
               </a>
-              <a href="#live-matches" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#live-matches" className="text-white hover:text-white transition-colors text-sm">
                 Live Matches
               </a>
-              <a href="#leaderboard" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#leaderboard" className="text-white hover:text-white transition-colors text-sm">
                 Leaderboard
               </a>
-              <a href="#about" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#about" className="text-white hover:text-white transition-colors text-sm">
                 About
               </a>
             </div>
 
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex items-center space-x-4">
-              <button className="px-4 py-2 text-gray-300 hover:text-white transition-colors">
+              <button className="px-4 py-2 text-gray-300 hover:text-white transition-colors border border-[#595959] rounded-lg">
                 Join a Live Match
               </button>
-              <button className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors">
-                Start Practice Match
-              </button>
+          
             </div>
 
             {/* Mobile Menu Button */}
