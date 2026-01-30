@@ -62,10 +62,10 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <button className="px-8 py-4 bg-[#00E699] hover:bg-[#00D689] text-white font-semibold rounded-lg transition-colors text-lg w-full sm:w-auto shadow-lg shadow-[#00E699]/20">
+          <button className="px-8 py-4 border border-[#424242]  text-white font-semibold rounded-lg transition-colors text-lg w-full sm:w-auto shadow-lg shadow-[#000]/20">
             Start Practice Match
           </button>
-          <button className="px-8 py-4 bg-transparent border-2 border-[#8A2BE2] hover:bg-[#8A2BE2]/10 text-white font-semibold rounded-lg transition-colors text-lg w-full sm:w-auto">
+          <button className="px-8 py-4 bg-transparent border border-[#8A2BE2] hover:bg-[#8A2BE2]/10 text-white font-semibold rounded-lg transition-colors text-lg w-full sm:w-auto">
             Join a Live Match
           </button>
         </div>
