@@ -28,7 +28,7 @@ const Hero = () => {
       </div>
 
 
-  {/* <img src="/bg.png" alt=""  className='absolute inset-0 w-full h-full'/> */}
+  <img src="/bg.png" alt=""  className='absolute inset-0 w-full h-full'/>
 
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">

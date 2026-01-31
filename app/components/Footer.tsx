@@ -12,7 +12,7 @@ const Footer = () => {
               Start Competing on Market Skill
             </h2>
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              Join Stravex and experience crypto markets as a gamified prediction competition, where performance defines success.
+              Join Stravex and experience crypto markets as a gamified prediction competition, where performance defines success.nndfkfk dkfgm nflndfnlldkdns,.dn,nk 
             </p>
             <div className="flex gap-4 justify-center">
               <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors">
@@ -20,7 +20,7 @@ const Footer = () => {
               </button>
               <button className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg border border-gray-700 transition-colors">
                 Join a Live Match
-              </button>
+              </button>kfdfkmn 
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="GitHub"
               >
-                <FaGithub size={24} />
+                <FaGithub size={24} />fgfnbfdb. dfdbfnkj dnn dfbnf dbf dsbnf dsfmsdbfmds bfn;msdbf sdfjhbtzkm;fbdsf fmndsbfq;znkizumikz;3zk3mknzom;z
               </a>
               <a 
                 href="https://linkedin.com" 
