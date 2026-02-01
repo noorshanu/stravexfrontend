@@ -17,37 +17,37 @@ const Aboutus = () => {
               </span>
             </h2>
             
-            <p className="text-lg sm:text-xl text-[#CCCCCC] mb-8 leading-relaxed">
+            <p className="text-sm sm:text-base text-[#CCCCCC] mb-4 leading-relaxed">
               Stravex transforms crypto market prediction into a structured, competitive experience.
             </p>
 
-            <p className="text-base sm:text-lg text-[#CCCCCC] mb-8 leading-relaxed">
+            <p className="text-sm sm:text-base text-[#CCCCCC] mb-4 leading-relaxed">
               Instead of passive trading or speculative guessing, players:
             </p>
 
-            <ul className="space-y-4 mb-8">
+            <ul className="space-y-2 mb-4">
               <li className="flex items-start">
                 <span className="text-[#00E699] mr-3 mt-1">•</span>
-                <span className="text-base sm:text-lg text-[#CCCCCC]">
+                <span className="text-sm sm:text-base text-[#CCCCCC]">
                   Select crypto assets based on market conviction
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#00E699] mr-3 mt-1">•</span>
-                <span className="text-base sm:text-lg text-[#CCCCCC]">
+                <span className="text-sm sm:text-base text-[#CCCCCC]">
                   Allocate capital to construct a portfolio
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#00E699] mr-3 mt-1">•</span>
-                <span className="text-base sm:text-lg text-[#CCCCCC]">
+                <span className="text-sm sm:text-base text-[#CCCCCC]">
                   Compete against others in time-boxed matches
                 </span>
               </li>
             </ul>
 
-            <p className="text-lg sm:text-xl text-white font-medium leading-relaxed border-l-4 border-[#8A2BE2] pl-6">
-              Each match is a performance-driven challenge where rankings are determined by portfolio outcomes — not chance.
+            <p className="text-sm sm:text-base text-white font-medium leading-relaxed border-l-4 border-[#8A2BE2] pl-6">
+              Each match is a performance-driven challenge where rankings are determined by portfolio outcomes not chance.
             </p>
           </div>
 

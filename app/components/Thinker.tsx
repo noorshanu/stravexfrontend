@@ -141,21 +141,10 @@ const Thinker = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <motion.div
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: 'spring', stiffness: 200, delay: 0.2 }}
-            className="inline-block mb-6"
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF] to-[#8A2BE2] blur-2xl opacity-50 rounded-full"></div>
-              <FaChess className="relative text-6xl text-[#00E699]" />
-            </div>
-          </motion.div>
+    
           
           <p className="text-sm sm:text-base text-[#888888] mb-4 tracking-wider uppercase">
-            Section 5 — Built for Competitive Thinkers
+           Built for Competitive Thinkers
           </p>
           
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -352,7 +341,7 @@ const Thinker = () => {
                   className="mt-10 text-center"
                 >
                   <p className="text-lg text-[#CCCCCC] italic">
-                    "A structured environment to compete on skill"
+                    A structured environment to compete on skill
                   </p>
                 </motion.div>
               </div>

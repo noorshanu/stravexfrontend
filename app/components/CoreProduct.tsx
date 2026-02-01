@@ -125,7 +125,7 @@ const CoreProduct = () => {
   }
 
   return (
-    <section className="relative text-white py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative text-white py-16 sm:py-20 px-4 sm:px-6 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Animated Gradient Orbs */}
@@ -191,7 +191,7 @@ const CoreProduct = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <motion.div
+          {/* <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
@@ -202,7 +202,7 @@ const CoreProduct = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF] to-[#8A2BE2] blur-2xl opacity-50 rounded-full"></div>
               <FaShieldAlt className="relative text-5xl text-[#00E699]" />
             </div>
-          </motion.div>
+          </motion.div> */}
           
           <p className="text-sm sm:text-base text-[#888888] mb-4 tracking-wider uppercase">
             Core Product Capabilities
@@ -231,7 +231,7 @@ const CoreProduct = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-5"
+          className="grid grid-cols-1 sm:grid-cols-3 justify-center gap-6 lg:gap-5"
         >
           {capabilities.map((capability, index) => {
             const IconComponent = capability.icon
