@@ -16,7 +16,7 @@ export default function Home() {
             <Aboutus />
           
           <ScrollCards /> 
-            <CoreProduct />
+            {/* <CoreProduct /> */}
             <Thinker />
             <Footer />
     </>
