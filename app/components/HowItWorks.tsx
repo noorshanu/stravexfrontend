@@ -115,7 +115,7 @@ const HowItWorks = () => {
   return (
     <section
       id="how-it-works"
-      className="relative  text-white "
+      className="relative  text-white  px-2"
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
