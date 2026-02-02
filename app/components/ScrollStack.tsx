@@ -5,7 +5,6 @@ import type { ReactNode } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 export interface ScrollStackItemProps {
@@ -26,53 +25,128 @@ interface ScrollStackProps {
 
 const ScrollStack: React.FC<ScrollStackProps> = ({ children, className = '' }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
     if (!containerRef.current) return;
 
     const cards = gsap.utils.toArray<HTMLDivElement>('.scroll-stack-card');
-    cardsRef.current = cards;
+    const totalCards = cards.length;
 
-    // Create ScrollTrigger for each card
+    // Set up the sticky container
+    const container = containerRef.current;
+
+    // Initialize cards with 3D perspective styling
     cards.forEach((card, index) => {
-      // Pin each card with reduced duration to prevent overlap
-      ScrollTrigger.create({
-        trigger: card,
-        start: 'top 15%',
-        end: () => `+=${(cards.length - index) * 250}`, // Reduced from 400 to 250
-        pin: true,
-        pinSpacing: false,
-        markers: false,
-        id: `pin-${index}`,
+      gsap.set(card, {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: totalCards - index,
+        transformOrigin: 'center top',
+        scale: 1,
+        y: 0,
       });
+    });
 
-      // Scale down animation as next card comes in
-      if (index < cards.length - 1) {
+    // Create the main pinning trigger
+    ScrollTrigger.create({
+      trigger: container,
+      start: 'top 10%',
+      end: () => `+=${totalCards * 100}%`,
+      pin: true,
+      pinSpacing: true,
+      markers: false,
+    });
+
+    // Animate each card
+    cards.forEach((card, index) => {
+      if (index < totalCards - 1) {
+        // Calculate progress range for this card
+        const startProgress = index / totalCards;
+        const endProgress = (index + 1) / totalCards;
+
+        // Create scroll-linked animation
         gsap.to(card, {
-          scale: 0.9 - (index * 0.05),
-          transformOrigin: 'top center',
-          ease: 'none',
+          scale: 0.85,
+          y: -50,
+          borderRadius: '40px',
+          boxShadow: '0 -10px 50px rgba(0,0,0,0.3)',
           scrollTrigger: {
-            trigger: cards[index + 1],
-            start: 'top bottom',
-            end: 'top 15%',
-            scrub: true,
+            trigger: container,
+            start: 'top 10%',
+            end: () => `+=${totalCards * 100}%`,
+            scrub: 0.8,
             markers: false,
-            id: `scale-${index}`,
+            onUpdate: (self) => {
+              const progress = self.progress;
+
+              // Only animate when within this card's range
+              if (progress >= startProgress && progress <= endProgress) {
+                const localProgress = (progress - startProgress) / (endProgress - startProgress);
+
+                gsap.to(card, {
+                  scale: 1 - (localProgress * 0.15),
+                  y: -(localProgress * 60),
+                  duration: 0,
+                  overwrite: 'auto',
+                });
+              }
+            },
           },
         });
       }
+
+      // Reveal animation for each card (except first)
+      if (index > 0) {
+        const startProgress = (index - 0.3) / totalCards;
+
+        gsap.fromTo(card,
+          {
+            y: '100%',
+            scale: 0.95,
+          },
+          {
+            y: 0,
+            scale: 1,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: container,
+              start: 'top 10%',
+              end: () => `+=${totalCards * 100}%`,
+              scrub: 0.8,
+              markers: false,
+              onUpdate: (self) => {
+                const progress = self.progress;
+                const revealProgress = Math.max(0, Math.min(1, (progress - startProgress) / 0.4));
+
+                gsap.to(card, {
+                  y: (1 - revealProgress) * 100 + '%',
+                  duration: 0,
+                  overwrite: 'auto',
+                });
+              },
+            },
+          }
+        );
+      }
     });
 
-    // Cleanup function
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, [children]);
 
   return (
-    <div ref={containerRef} className={`scroll-stack-container ${className}`.trim()}>
+    <div
+      ref={containerRef}
+      className={`scroll-stack-container relative ${className}`.trim()}
+      style={{
+        height: '450px',
+        perspective: '1200px',
+        perspectiveOrigin: 'center top',
+      }}
+    >
       {children}
     </div>
   );
