@@ -61,7 +61,7 @@ const Footer = () => {
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="GitHub"
               >
-                <FaGithub size={24} />fgfnbfdb. dfdbfnkj dnn dfbnf dbf dsbnf dsfmsdbfmds bfn;msdbf sdfjhbtzkm;fbdsf fmndsbfq;znkizumikz;3zk3mknzom;z
+                <FaGithub size={24} />
               </a>
               <a 
                 href="https://linkedin.com" 
