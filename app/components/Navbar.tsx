@@ -16,9 +16,16 @@ const Navbar = () => {
     setIsMenuOpen(false)
   }
 
+  const navLinks = [
+    { href: '#about', label: 'About us' },
+    { href: '#how-it-works', label: 'How it works' },
+    { href: '#core-product', label: 'Core Product' },
+    { href: '/conatct-us', label: 'Contact us', isPage: true },
+  ]
+
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm border-b border-[#595959] bg-transparent">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-[#595959] bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -31,32 +38,40 @@ const Navbar = () => {
                   height={90}
                   className=""
                 />
-               
               </Link>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#how-it-works" className="text-white hover:text-white transition-colors text-sm">
-                How It Works
-              </a>
-              <a href="#live-matches" className="text-white hover:text-white transition-colors text-sm">
-                Live Matches
-              </a>
-              <a href="#leaderboard" className="text-white hover:text-white transition-colors text-sm">
-                Leaderboard
-              </a>
-              <a href="#about" className="text-white hover:text-white transition-colors text-sm">
-                About
-              </a>
+              {navLinks.map((link) => (
+                link.isPage ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-white/70 hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="text-white/70 hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                  </a>
+                )
+              ))}
             </div>
 
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex items-center space-x-4">
-              <button className="px-4 py-2 text-gray-300 hover:text-white transition-colors border border-[#595959] rounded-lg">
+              <a
+                href="#cta"
+                className="px-4 py-2 text-gray-300 hover:text-white transition-colors border border-[#595959] rounded-lg"
+              >
                 Join a Live Match
-              </button>
-          
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -73,9 +88,8 @@ const Navbar = () => {
 
       {/* Mobile Slider Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-80 bg-gray-900 z-50 transform transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } md:hidden`}
+        className={`fixed top-0 right-0 h-full w-80 bg-gray-900 z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          } md:hidden`}
       >
         {/* Mobile Menu Header */}
         <div className="flex items-center justify-between p-4 border-b border-gray-800">
@@ -100,48 +114,43 @@ const Navbar = () => {
 
         {/* Mobile Menu Links */}
         <div className="flex flex-col p-4 space-y-4">
-          <a
-            href="#how-it-works"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-white transition-colors py-2 text-lg"
-          >
-            How It Works
-          </a>
-          <a
-            href="#live-matches"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-white transition-colors py-2 text-lg"
-          >
-            Live Matches
-          </a>
-          <a
-            href="#leaderboard"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-white transition-colors py-2 text-lg"
-          >
-            Leaderboard
-          </a>
-          <a
-            href="#about"
-            onClick={closeMenu}
-            className="text-gray-300 hover:text-white transition-colors py-2 text-lg"
-          >
-            About
-          </a>
-          
+          {navLinks.map((link) => (
+            link.isPage ? (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={closeMenu}
+                className="text-gray-300 hover:text-white transition-colors py-2 text-lg"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={closeMenu}
+                className="text-gray-300 hover:text-white transition-colors py-2 text-lg"
+              >
+                {link.label}
+              </a>
+            )
+          ))}
+
           <div className="pt-4 border-t border-gray-800 space-y-3">
-            <button
+            <a
+              href="#cta"
               onClick={closeMenu}
-              className="w-full px-4 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg transition-colors"
+              className="block w-full px-4 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg transition-colors text-center"
             >
               Join a Live Match
-            </button>
-            <button
+            </a>
+            <a
+              href="#cta"
               onClick={closeMenu}
-              className="w-full px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+              className="block w-full px-4 py-3 bg-white hover:bg-white/90 text-gray-900 font-semibold rounded-lg transition-colors text-center"
             >
               Start Practice Match
-            </button>
+            </a>
           </div>
         </div>
       </div>

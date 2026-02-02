@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { 
+import {
   FaBrain,
   FaChartLine,
   FaUserTie,
@@ -40,11 +40,7 @@ const Thinker = () => {
     },
   ]
 
-  const values = [
-    { icon: FaBrain, text: 'Decision-Making' },
-    { icon: FaShieldAlt, text: 'Risk Assessment' },
-    { icon: FaLightbulb, text: 'Market Insight' },
-  ]
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -57,13 +53,13 @@ const Thinker = () => {
   }
 
   const cardVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 50,
       scale: 0.9
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       scale: 1,
       transition: {
@@ -75,23 +71,11 @@ const Thinker = () => {
   }
 
   return (
-    <section className="relative text-white py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="core-product" className="relative text-white py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Gradient Orbs */}
-        <motion.div
-          animate={{
-            x: [0, 100, 0],
-            y: [0, 50, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute top-20 left-10 w-96 h-96 bg-[#00F0FF]/10 rounded-full blur-3xl"
-        />
+        =
         <motion.div
           animate={{
             x: [0, -80, 0],
@@ -120,7 +104,7 @@ const Thinker = () => {
         />
 
         {/* Grid Pattern Overlay */}
-        <div 
+        <div
           className="absolute inset-0 opacity-5"
           style={{
             backgroundImage: `
@@ -141,13 +125,13 @@ const Thinker = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-    
-          
-          <p className="text-sm sm:text-base text-[#888888] mb-4 tracking-wider uppercase">
-           Built for Competitive Thinkers
+
+
+          <p className="text-xs sm:text-sm text-[#888888] mb-4 tracking-wider uppercase">
+            Built for Competitive Thinkers
           </p>
-          
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
             Designed for{' '}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-[#00F0FF] via-[#8A2BE2] to-[#00E699] bg-clip-text text-transparent">
@@ -170,7 +154,7 @@ const Thinker = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-xl sm:text-2xl text-[#CCCCCC] max-w-3xl mx-auto leading-relaxed"
+            className="text-sm sm:text-lg text-[#CCCCCC] max-w-3xl mx-auto leading-relaxed"
           >
             If you value decision-making, risk assessment, and market insight, Stravex offers a structured environment to compete on skill.
           </motion.p>
@@ -194,23 +178,13 @@ const Thinker = () => {
                 className="relative group"
               >
                 {/* Glassmorphism Card */}
-                <div 
-                  className="relative h-full p-8 rounded-2xl backdrop-blur-xl border border-white/10 bg-gradient-to-br from-white/5 to-white/0 overflow-hidden"
+                <div
+                  className="relative h-full p-8 rounded-2xl backdrop-blur-xl border border-white/10 bg-[#191a23] overflow-hidden"
                   style={{
                     boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
                   }}
                 >
-                  {/* Animated Gradient Border */}
-                  <div 
-                    className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                    style={{
-                      background: `linear-gradient(135deg, ${type.gradientFrom}40, ${type.gradientTo}40)`,
-                      padding: '2px',
-                      WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-                      WebkitMaskComposite: 'xor',
-                      maskComposite: 'exclude',
-                    }}
-                  />
+
 
                   {/* Icon */}
                   <motion.div
@@ -218,16 +192,13 @@ const Thinker = () => {
                     transition={{ duration: 0.6 }}
                     className="mb-6 flex justify-center"
                   >
-                    <div 
-                      className="relative w-20 h-20 rounded-2xl flex items-center justify-center shadow-2xl"
-                      style={{
-                        background: `linear-gradient(135deg, ${type.gradientFrom}, ${type.gradientTo})`,
-                        boxShadow: `0 20px 40px -10px ${type.gradientTo}60`,
-                      }}
+                    <div
+                      className="relative w-20 h-20 flex items-center justify-center shadow-2xl bg-[#191a23] rounded-full"
+
                     >
                       <IconComponent className="text-white text-3xl" />
-                      <div 
-                        className="absolute inset-0 rounded-2xl blur-xl opacity-50"
+                      <div
+                        className="absolute inset-0 rounded-full blur-xl opacity-50"
                         style={{
                           background: `linear-gradient(135deg, ${type.gradientFrom}, ${type.gradientTo})`,
                         }}
@@ -254,7 +225,7 @@ const Thinker = () => {
                         transition={{ delay: 0.3 + idx * 0.1 }}
                         className="flex items-center gap-2 text-sm text-[#CCCCCC]"
                       >
-                        <div 
+                        <div
                           className="w-1.5 h-1.5 rounded-full"
                           style={{
                             background: `linear-gradient(135deg, ${type.gradientFrom}, ${type.gradientTo})`,
@@ -266,7 +237,7 @@ const Thinker = () => {
                   </div>
 
                   {/* Hover Glow Effect */}
-                  <div 
+                  <div
                     className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10 blur-2xl"
                     style={{
                       background: `radial-gradient(circle, ${type.gradientTo} 0%, transparent 70%)`,
@@ -278,76 +249,7 @@ const Thinker = () => {
           })}
         </motion.div>
 
-        {/* Values Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mt-20"
-        >
-          <div className="relative max-w-4xl mx-auto">
-            {/* Premium Glass Card */}
-            <div className="relative p-8 sm:p-12 rounded-3xl backdrop-blur-xl border border-white/10 bg-gradient-to-br from-white/10 to-white/0 overflow-hidden">
-              {/* Animated Background Gradient */}
-              <motion.div
-                animate={{
-                  backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
-                }}
-                transition={{
-                  duration: 10,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-                className="absolute inset-0 opacity-20"
-                style={{
-                  background: `linear-gradient(90deg, #00F0FF, #8A2BE2, #00E699, #00F0FF)`,
-                  backgroundSize: '300% 300%',
-                }}
-              />
 
-              <div className="relative z-10">
-                <h3 className="text-2xl sm:text-3xl font-bold mb-8 text-center">
-                  Built for Those Who Value
-                </h3>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                  {values.map((value, index) => {
-                    const IconComponent = value.icon
-                    return (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.2, type: 'spring' }}
-                        whileHover={{ scale: 1.05, y: -5 }}
-                        className="flex flex-col items-center p-6 rounded-xl bg-white/5 border border-white/10 hover:border-white/20 transition-all"
-                      >
-                        <div className="mb-4 p-4 rounded-full bg-gradient-to-br from-[#00F0FF]/20 to-[#8A2BE2]/20">
-                          <IconComponent className="text-3xl text-[#00E699]" />
-                        </div>
-                        <p className="text-lg font-semibold text-white">{value.text}</p>
-                      </motion.div>
-                    )
-                  })}
-                </div>
-
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.6 }}
-                  className="mt-10 text-center"
-                >
-                  <p className="text-lg text-[#CCCCCC] italic">
-                    A structured environment to compete on skill
-                  </p>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

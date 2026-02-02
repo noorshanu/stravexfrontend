@@ -61,11 +61,11 @@ export default function ScrollCards() {
                     transition={{ duration: 0.8 }}
                     className="text-center"
                 >
-                    <p className="text-sm sm:text-base text-[#888888] mb-4 tracking-wider uppercase">
+                    <p className="text-xs sm:text-sm text-[#888888] mb-4 tracking-wider uppercase">
                         Core Product Capabilities
                     </p>
 
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    <h2 className="text-4xl sm:text-5xl  font-bold mb-2 leading-tight">
                         Built for Fair,{' '}
                         <span className="relative inline-block">
                             <span className="bg-gradient-to-r from-[#00F0FF] via-[#8A2BE2] to-[#00E699] bg-clip-text text-transparent">
@@ -225,7 +225,7 @@ export default function ScrollCards() {
                 </div>
             </div>
 
-            {/* Scroll indicator */}
+            {/* Scroll indicator
             <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 pointer-events-none">
                 <motion.div
                     className="flex items-center gap-2 text-white/40 text-sm"
@@ -247,7 +247,7 @@ export default function ScrollCards() {
                         →
                     </motion.div>
                 </motion.div>
-            </div>
+            </div> */}
         </div>
     )
 }

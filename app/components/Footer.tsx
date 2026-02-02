@@ -3,31 +3,11 @@ import { FaTwitter, FaDiscord, FaGithub, FaLinkedin, FaTelegram } from 'react-ic
 
 const Footer = () => {
   return (
-    <footer className=" text-gray-300">
-      {/* CTA Section */}
-      <div className="border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Start Competing on Market Skill
-            </h2>
-            <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              Join Stravex and experience crypto markets as a gamified prediction competition, where performance defines success.nndfkfk dkfgm nflndfnlldkdns,.dn,nk 
-            </p>
-            <div className="flex gap-4 justify-center">
-              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors">
-                Start Practice Match
-              </button>
-              <button className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg border border-gray-700 transition-colors">
-                Join a Live Match
-              </button>kfdfkmn 
-            </div>
-          </div>
-        </div>
-      </div>
+    <footer className=" text-gray-300  border-t border-gray-800">
+    
 
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
