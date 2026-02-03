@@ -32,19 +32,10 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        {/* Logo */}
-        {/* <div className="mb-8 flex justify-center">
-          <div className="relative">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
-              <span className="bg-gradient-to-r from-[#00F0FF] to-[#8A2BE2] bg-clip-text text-transparent">
-                STRAVEX
-              </span>
-            </h1>
-          </div>
-        </div> */}
+
 
         {/* Main Heading */}
-        <h2 className="text-4xl sm:text-[80px]  font-extrabold mb-6 leading-tight">
+        <h2 className="text-3xl sm:text-[80px]  font-extrabold mb-6 leading-tight">
           Compete on Market
           <br />
        Skill Not Luck.

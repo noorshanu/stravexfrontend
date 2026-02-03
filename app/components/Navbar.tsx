@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import React, { useState } from 'react'
@@ -31,12 +32,11 @@ const Navbar = () => {
             {/* Logo */}
             <div className="shrink-0">
               <Link href="/" className="flex items-center">
-                <Image
+                <img
                   src="/logo.jpeg"
                   alt="Stravex Logo"
-                  width={190}
-                  height={90}
-                  className=""
+                
+                  className=" w-[150px] h-[40px] sm:w-[190px] sm:h-[50px]"
                 />
               </Link>
             </div>
