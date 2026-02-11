@@ -75,7 +75,6 @@ const Thinker = () => {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Gradient Orbs */}
-        =
         <motion.div
           animate={{
             x: [0, -80, 0],

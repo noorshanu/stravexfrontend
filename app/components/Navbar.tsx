@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className="shrink-0">
               <Link href="/" className="flex items-center">
                 <img
-                  src="/logo.jpeg"
+                  src="/logo.png"
                   alt="Stravex Logo"
                 
                   className=" w-[150px] h-[40px] sm:w-[190px] sm:h-[50px]"
