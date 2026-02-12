@@ -2,6 +2,7 @@
 'use client'
 import React from 'react'
 import LiquidEther from './LiquidEther'
+import Liveprice from './Liveprice'
 
 const Hero = () => {
   return (
@@ -61,7 +62,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-
+<Liveprice/>
       {/* Risk Disclosure */}
       <div className="relative z-10 mt-auto pt-3">
         <p className="text-xs sm:text-sm text-[#888888] text-center max-w-2xl mx-auto">
