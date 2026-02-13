@@ -6,6 +6,7 @@ import { FiMail, FiMapPin, FiClock, FiSend } from 'react-icons/fi'
 import { FaTwitter, FaDiscord, FaTelegram } from 'react-icons/fa'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import FAQ from '../components/FAQ'
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -198,19 +199,23 @@ const ContactPage = () => {
                             </div>
 
                             {/* FAQ Link */}
-                            <div
+                            {/* <div
+                                id="contact-form"
                                 className="p-6 rounded-2xl border border-white/[0.06] text-center"
                                 style={{ backgroundColor: 'rgba(255,255,255,0.02)' }}
                             >
                                 <p className="text-white/40 text-sm mb-2">Looking for quick answers?</p>
-                                <a href="#" className="text-white font-medium hover:text-white/80 transition-colors">
+                                <a href="#faq-section" className="text-white font-medium hover:text-white/80 transition-colors">
                                     Check our FAQ →
                                 </a>
-                            </div>
+                            </div> */}
                         </motion.div>
                     </div>
                 </div>
             </main>
+            <div id="faq-section">
+                <FAQ />
+            </div>
             <Footer />
         </>
     )
