@@ -150,64 +150,66 @@ function Hero2() {
   return (
     <div
       ref={container}
-      className='h-auto py-10 sm:py-0 sm:min-h-screen  flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 relative z-50'
+      className='min-h-[100vh] sm:min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 relative z-50 overflow-hidden pt-24 pb-16 sm:py-0'
     >
-      <img
-        src='images/hero.png'
-        alt=''
-        className=' absolute top-0 right-0 left-0 sm:left-[400px] bottom-0 h-auto sm:h-[700px] blob1'
-      />
-      <img
-        src='images/herobl.png'
-        alt=''
-        className='absolute left-0 bottom-0 z-50 sm:block hidden blob2'
-      />
-      <div className='max-w-4xl mx-auto '>
+      {/* Background Images - Hidden on mobile for cleaner look */}
+      <div className="absolute inset-0 z-0 hidden sm:block">
+        <img
+          src='images/hero.png'
+          alt=''
+          className='absolute left-[400px] h-[700px] w-auto object-contain blob1'
+        />
+        <img
+          src='images/herobl.png'
+          alt=''
+          className='absolute left-0 bottom-0 blob2'
+        />
+      </div>
+
+      {/* Mobile gradient overlay for depth */}
+      <div className="absolute inset-0 z-0 sm:hidden bg-gradient-to-b from-transparent via-transparent to-black/20" />
+
+      <div className='max-w-4xl mx-auto relative z-10 w-full'>
         {/* Top label */}
-        <div className='mb-8'>
-          <span className='bg-gray-800/60 text-gray-200 px-6 py-2 rounded-full text-sm font-eculid pill'>
-           Predict trends. Allocate capital. Outperform the field.
+        <div className='mb-8 sm:mb-8'>
+          <span className='bg-gray-800/80 backdrop-blur-sm text-gray-200 px-4 py-2 sm:px-6 sm:py-2 rounded-full text-xs sm:text-sm font-eculid pill inline-block'>
+            Predict trends. Allocate capital. Outperform the field.
           </span>
         </div>
 
         {/* Main heading */}
-        <h1 className='text-4xl  sm:text-7xl lg:text-7xl font-bold text-white mb-6'>
+        <h1 className='text-[2.25rem] leading-[1.2] sm:text-7xl lg:text-7xl font-bold text-white mb-6 sm:mb-6 px-2 sm:px-0'>
           <span className='inline-block transform'>Compete on</span>{' '}
           <span className='relative inline-block text-[#1b8bfd] keyword1'>
             <span className='absolute top-0 bottom-0 left-0 right-0 bg-[#1b8bfd] keyword1-bg'></span>
-      Trading
-          </span>{' '}
-          <span className='inline-block with'>Skill.</span>
+            Trading
+          </span>
+          <br />
+          <span className='inline-block with'>Skill. </span>
           <span className='inline-block relative text-[#1b8bfd] keyword2'>
             <span className='absolute top-0 -bottom-1 left-0 right-0 bg-[#1b8bfd] keyword2-bg'></span>
-       Not Luck
-          </span>{' '}
+            Not Luck
+          </span>
           <span className='inline-block agents'>.</span>
         </h1>
 
         {/* Subheading */}
-        <div className='space-y-2 mb-12 '>
-          <p className='text-gray-300 text-lg sm:text-xl font-eculid text1'>
-               The world’s first AI-powered, gamified crypto prediction market.
+        <div className='space-y-3 mb-10 sm:mb-12 px-4 sm:px-0'>
+          <p className='text-gray-300 text-sm sm:text-xl font-eculid text1 leading-relaxed'>
+            The world&apos;s first AI-powered, gamified crypto prediction market.
           </p>
-          <p className='text-gray-300 text-lg sm:text-xl font-eculid text2'>
-           Stravex lets you build portfolios, enter live matches, and compete 
-against humans, intelligent AI agents, or both using real market performance.
+          <p className='text-gray-400 text-sm sm:text-xl font-eculid text2 leading-relaxed max-w-2xl mx-auto'>
+            Stravex lets you build portfolios, enter live matches, and compete
+            against humans, intelligent AI agents, or both using real market performance.
           </p>
         </div>
 
-
-    
-
-
-
-
         {/* CTA Button */}
-        <div className='cta'>
-          <a href='#' className='group cursor-pointer  font-eculid border bg-gray-800/60 hover:bg-gray-800/80 text-white px-8 py-3 rounded-md text-lg transition-all duration-300 flex justify-center w-fit items-center gap-2 mx-auto '>
-          Live Match
+        <div className='cta mb-8 sm:mb-0'>
+          <a href='#' className='group cursor-pointer font-eculid border border-white/20 bg-gray-800/80 hover:bg-gray-800/90 backdrop-blur-sm text-white px-8 py-3 sm:px-8 sm:py-3 rounded-md text-sm sm:text-lg transition-all duration-300 flex justify-center w-fit items-center gap-2 mx-auto shadow-lg'>
+            Live Match
             <svg
-              className='w-5 h-5 group-hover:translate-x-1 transition-transform duration-300'
+              className='w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
@@ -221,10 +223,9 @@ against humans, intelligent AI agents, or both using real market performance.
             </svg>
           </a>
         </div>
-    <div className='py-4 mt-8'>
-            <Liveprice/>
-
-    </div>
+        <div className='mt-8 sm:mt-8 w-full overflow-x-auto'>
+          <Liveprice />
+        </div>
       </div>
     </div>
   );
