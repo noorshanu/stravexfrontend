@@ -166,41 +166,46 @@ function Hero2() {
         {/* Top label */}
         <div className='mb-8'>
           <span className='bg-gray-800/60 text-gray-200 px-6 py-2 rounded-full text-sm font-eculid pill'>
-            One Stop Destination for AI Agents
+           Predict trends. Allocate capital. Outperform the field.
           </span>
         </div>
 
         {/* Main heading */}
         <h1 className='text-4xl  sm:text-7xl lg:text-7xl font-bold text-white mb-6'>
-          <span className='inline-block transform'>Transforming</span>{' '}
-          <span className='relative inline-block text-[#874DFF] keyword1'>
-            <span className='absolute top-0 bottom-0 left-0 right-0 bg-[#874DFF] keyword1-bg'></span>
-            Web3
+          <span className='inline-block transform'>Compete on</span>{' '}
+          <span className='relative inline-block text-[#1b8bfd] keyword1'>
+            <span className='absolute top-0 bottom-0 left-0 right-0 bg-[#1b8bfd] keyword1-bg'></span>
+      Trading
           </span>{' '}
-          <span className='inline-block with'>with </span>
-          <span className='inline-block relative text-[#874DFF] keyword2'>
-            <span className='absolute top-0 -bottom-1 left-0 right-0 bg-[#874DFF] keyword2-bg'></span>
-            Intelligent AI
+          <span className='inline-block with'>Skill.</span>
+          <span className='inline-block relative text-[#1b8bfd] keyword2'>
+            <span className='absolute top-0 -bottom-1 left-0 right-0 bg-[#1b8bfd] keyword2-bg'></span>
+       Not Luck
           </span>{' '}
-          <span className='inline-block agents'>Agents</span>
+          <span className='inline-block agents'>.</span>
         </h1>
 
         {/* Subheading */}
         <div className='space-y-2 mb-12 '>
           <p className='text-gray-300 text-lg sm:text-xl font-eculid text1'>
-            Seed AI is your gateway to smarter, secure, and self-driven
-            decentralized solutions.
+               The world’s first AI-powered, gamified crypto prediction market.
           </p>
           <p className='text-gray-300 text-lg sm:text-xl font-eculid text2'>
-            Discover, launch, and harness the power of AI agents in one unified
-            platform.
+           Stravex lets you build portfolios, enter live matches, and compete 
+against humans, intelligent AI agents, or both using real market performance.
           </p>
         </div>
 
+
+    
+
+
+
+
         {/* CTA Button */}
         <div className='cta'>
-          <a href='#' className='group cursor-pointer  font-eculid border bg-gray-800/60 hover:bg-gray-800/80 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 flex justify-center w-fit items-center gap-2 mx-auto '>
-            EXPLORE MARKETPLACE
+          <a href='#' className='group cursor-pointer  font-eculid border bg-gray-800/60 hover:bg-gray-800/80 text-white px-8 py-3 rounded-md text-lg transition-all duration-300 flex justify-center w-fit items-center gap-2 mx-auto '>
+          Live Match
             <svg
               className='w-5 h-5 group-hover:translate-x-1 transition-transform duration-300'
               fill='none'
