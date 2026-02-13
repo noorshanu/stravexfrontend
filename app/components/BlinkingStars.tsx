@@ -91,7 +91,7 @@ const BlinkingStars = () => {
                             left: `${star.left}%`,
                             width: `${star.size}px`,
                             height: `${star.size}px`,
-                            backgroundColor: '#FFFFFF',
+                            backgroundColor: '#1b8bfd',
                             borderRadius: '50%',
                         }}
                     />

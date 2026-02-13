@@ -102,13 +102,13 @@ const WhatIsStravex = () => {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className="relative"
           >
-            <div className="relative glass-card p-8 lg:p-10 overflow-hidden">
-              {/* Glowing border effect */}
+            <div className="relative glass-card p-8 lg:p-10 overflow-hidden border-primary/20 shadow-glow-sm">
+              {/* Glowing border effect - Enhanced */}
               <div
-                className="absolute inset-0 rounded-lg opacity-50"
+                className="absolute inset-0 rounded-lg opacity-40"
                 style={{
                   background:
-                    "linear-gradient(135deg, hsl(210 100% 55% / 0.05), transparent 50%, hsl(175 75% 42% / 0.05))",
+                    "radial-gradient(circle at 50% 50%, hsl(210 100% 55% / 0.08), transparent 70%), linear-gradient(135deg, hsl(210 100% 55% / 0.1), transparent 50%, hsl(175 75% 42% / 0.1))",
                 }}
               />
 
