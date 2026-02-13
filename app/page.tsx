@@ -15,23 +15,28 @@ export default function Home() {
   return (
     <>
       <BlinkingStars />
-      <div className="relative z-30 ">
+      <div className="relative z-10 ">
         <img src='images/grid.png' alt='' className=' absolute top-0 ' />
-      </div>
+
       <Navbar />
       {/* <Hero /> */}
       <Hero2 />
-
+      </div>
 
       <WhatIsStravex />
 
       <HowItWorks />
 
       {/* <Aboutus /> */}
-
-      <ScrollCards />
+      <div className=" relative ">
+        <img src='images/grid2.png' alt='' className=' absolute top-0 ' />
+              <ScrollCards />
 
       <BuiltForThinkers />
+      </div>
+
+
+
 
 
       <CTA />

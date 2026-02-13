@@ -114,24 +114,59 @@ const HumanTraderGraph = () => (
 );
 
 const AIAgentDataVisual = () => (
-  <div className="space-y-1.5 overflow-hidden">
-    {[0, 1, 2, 3].map((i) => (
-      <motion.div
-        key={i}
-        className="h-1.5 rounded-full bg-accent/20"
-        initial={{ width: "20%", opacity: 0.3 }}
-        animate={{
-          width: ["20%", "60%", "30%", "80%", "40%"],
-          opacity: [0.3, 0.7, 0.3, 0.6, 0.3],
-        }}
-        transition={{
-          duration: 3 + i,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: i * 0.5,
-        }}
-      />
-    ))}
+  <div className="w-full h-full p-3 bg-black/40 rounded-lg space-y-3">
+    {/* Active Header */}
+    <div className="flex items-center justify-between border-b border-white/10 pb-2 mb-2">
+      <div className="flex items-center gap-2">
+        <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+        <span className="text-[10px] font-mono font-bold text-accent uppercase tracking-wider">
+          Processing
+        </span>
+      </div>
+      <div className="text-[10px] font-mono text-white/30">v4.2</div>
+    </div>
+
+    {/* Dynamic Data Code Lines */}
+    <div className="space-y-1.5 overflow-hidden">
+      {[0, 1, 2, 3, 4, 5].map((i) => (
+        <div key={i} className="flex items-center gap-2 h-2">
+          {/* Line number */}
+          <span className="text-[8px] font-mono text-white/10 w-3">
+            {i + 1}
+          </span>
+          {/* Data bar */}
+          <motion.div
+            className="h-1.5 rounded-full bg-accent/40 relative overflow-hidden"
+            initial={{ width: "20%" }}
+            animate={{
+              width: ["20%", "70%", "40%", "90%", "30%"],
+              backgroundColor: [
+                "rgba(4, 219, 137, 0.2)",
+                "rgba(4, 219, 137, 0.5)",
+                "rgba(4, 219, 137, 0.2)",
+              ],
+            }}
+            transition={{
+              duration: 2 + ((i * 0.5) % 2),
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: i * 0.2,
+            }}
+          >
+            <motion.div
+              className="absolute inset-y-0 left-0 w-full bg-linear-to-r from-transparent via-white/40 to-transparent"
+              animate={{ x: ["-100%", "100%"] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "linear",
+                delay: i * 0.5,
+              }}
+            />
+          </motion.div>
+        </div>
+      ))}
+    </div>
   </div>
 );
 
@@ -140,7 +175,7 @@ const BuiltForThinkers = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="community" ref={ref} className="relative py-24 lg:py-32">
+    <section id="community" ref={ref} className="relative py-24 lg:py-32 z-0">
       <div
         className="absolute top-0 left-0 right-0 h-px"
         style={{
