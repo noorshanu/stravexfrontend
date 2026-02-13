@@ -196,7 +196,7 @@ const BuiltForThinkers = () => {
               variant="outline"
               className="mb-5 border-primary/30 text-primary bg-primary/5 px-4 py-1.5 text-xs font-body tracking-wide"
             >
-              Community
+             Core Thinkers
             </Badge>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-foreground">
               Built for{" "}

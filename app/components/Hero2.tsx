@@ -1,14 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import Liveprice from './Liveprice';
+import ComingSoonPopup from './ComingSoonPopup';
 
 function Hero2() {
   gsap.registerPlugin(ScrollTrigger);
   const container = useRef<HTMLDivElement>(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useGSAP(
     () => {
@@ -150,7 +152,7 @@ function Hero2() {
   return (
     <div
       ref={container}
-      className='min-h-[100vh] sm:min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 relative z-50 overflow-hidden pt-24 pb-16 sm:py-0'
+      className='min-h-[100vh] sm:min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 relative z-20 overflow-hidden pt-24 pb-16 sm:py-0'
     >
       {/* Background Images - Hidden on mobile for cleaner look */}
       <div className="absolute inset-0 z-0 hidden sm:block">
@@ -206,7 +208,7 @@ function Hero2() {
 
         {/* CTA Button */}
         <div className='cta mb-8 sm:mb-0'>
-          <a href='#' className='group cursor-pointer font-eculid border border-white/20 bg-gray-800/80 hover:bg-gray-800/90 backdrop-blur-sm text-white px-8 py-3 sm:px-8 sm:py-3 rounded-md text-sm sm:text-lg transition-all duration-300 flex justify-center w-fit items-center gap-2 mx-auto shadow-lg'>
+          <button onClick={() => setIsPopupOpen(true)} className='group cursor-pointer font-eculid border border-white/20 bg-gray-800/80 hover:bg-gray-800/90 backdrop-blur-sm text-white px-8 py-3 sm:px-8 sm:py-3 rounded-md text-sm sm:text-lg transition-all duration-300 flex justify-center w-fit items-center gap-2 mx-auto shadow-lg'>
             Live Match
             <svg
               className='w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300'
@@ -221,12 +223,14 @@ function Hero2() {
                 d='M17 8l4 4m0 0l-4 4m4-4H3'
               />
             </svg>
-          </a>
+          </button>
         </div>
         <div className='mt-8 sm:mt-8 w-full overflow-x-auto'>
           <Liveprice />
         </div>
       </div>
+
+      <ComingSoonPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </div>
   );
 }

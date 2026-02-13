@@ -1,10 +1,13 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaPlay, FaTrophy } from 'react-icons/fa'
+import ComingSoonPopup from './ComingSoonPopup'
 
 const CTA = () => {
+    const [isPopupOpen, setIsPopupOpen] = useState(false)
+
     return (
         <section id="cta" className="relative py-20 sm:py-28 overflow-hidden">
             {/* Subtle top line */}
@@ -33,6 +36,7 @@ const CTA = () => {
                         <motion.button
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.98 }}
+                            onClick={() => setIsPopupOpen(true)}
                             className="group flex items-center gap-3 px-8 py-4 bg-white text-[#191a23] font-semibold rounded-xl transition-all duration-300 hover:bg-white/90"
                         >
                             <FaPlay className="text-sm" />
@@ -43,6 +47,7 @@ const CTA = () => {
                         <motion.button
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.98 }}
+                            onClick={() => setIsPopupOpen(true)}
                             className="group flex items-center gap-3 px-8 py-4 bg-transparent text-white font-semibold rounded-xl border border-white/[0.12] transition-all duration-300 hover:border-white/[0.25] hover:bg-white/[0.03]"
                         >
                             <FaTrophy className="text-sm text-white/60" />
@@ -62,6 +67,8 @@ const CTA = () => {
                     </motion.p>
                 </motion.div>
             </div>
+
+            <ComingSoonPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
         </section>
     )
 }

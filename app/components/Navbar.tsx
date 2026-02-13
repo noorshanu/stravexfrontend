@@ -5,9 +5,11 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import ComingSoonPopup from './ComingSoonPopup'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isPopupOpen, setIsPopupOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -35,7 +37,7 @@ const Navbar = () => {
                 <img
                   src="/logo.png"
                   alt="Stravex Logo"
-                
+
                   className=" w-[150px] h-[40px] sm:w-[190px] sm:h-[50px]"
                 />
               </Link>
@@ -66,12 +68,12 @@ const Navbar = () => {
 
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex items-center space-x-4">
-              <a
-                href="#cta"
+              <button
+                onClick={() => setIsPopupOpen(true)}
                 className="px-4 py-2 text-gray-300 hover:text-white transition-colors border border-[#595959] rounded-lg"
               >
                 Join a Live Match
-              </a>
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -137,20 +139,18 @@ const Navbar = () => {
           ))}
 
           <div className="pt-4 border-t border-gray-800 space-y-3">
-            <a
-              href="#cta"
-              onClick={closeMenu}
+            <button
+              onClick={() => { closeMenu(); setIsPopupOpen(true); }}
               className="block w-full px-4 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg transition-colors text-center"
             >
               Join a Live Match
-            </a>
-            <a
-              href="#cta"
-              onClick={closeMenu}
+            </button>
+            <button
+              onClick={() => { closeMenu(); setIsPopupOpen(true); }}
               className="block w-full px-4 py-3 bg-white hover:bg-white/90 text-gray-900 font-semibold rounded-lg transition-colors text-center"
             >
               Start Practice Match
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -165,6 +165,8 @@ const Navbar = () => {
 
       {/* Spacer to prevent content from going under fixed navbar */}
       <div className="h-16" />
+
+      <ComingSoonPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </>
   )
 }

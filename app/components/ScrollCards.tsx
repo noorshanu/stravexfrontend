@@ -255,7 +255,7 @@ export default function ScrollCards() {
     const smoothX = useSpring(x, { stiffness: 100, damping: 30 });
 
     return (
-        <div className="w-full py-20">
+        <div className="w-full py-20" id='core-product'>
             <div className="max-w-6xl mx-auto px-6 ">
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
