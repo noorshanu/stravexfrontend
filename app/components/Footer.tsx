@@ -121,10 +121,10 @@ const Footer = () => {
               © {new Date().getFullYear()} Stravex. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="/terms-and-condition" className="text-gray-400 hover:text-white transition-colors">
                 Terms & Conditions
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
               </a>
             </div>

@@ -1,0 +1,192 @@
+Stravex Terms and Conditions
+
+Effective Date: 15th Feb 2026
+
+Welcome to Stravex. These Terms and Conditions govern your access to and use of the Stravex platform and services. By using Stravex, you agree to be bound by these Terms.
+
+If you do not agree, you must discontinue use immediately.
+
+1. Platform Overview
+
+Stravex is a skill-based digital competition platform where users construct virtual portfolios and participate in time-boxed market prediction matches.
+
+Stravex is:
+
+A competitive skill platform
+
+A simulation environment using real market data
+
+Not a brokerage, exchange, or financial advisor
+
+No guarantees of profit or financial return are provided.
+
+2. Eligibility
+
+By using Stravex, you confirm that:
+
+You are at least 18 years old or legal age in your jurisdiction
+
+Participation is lawful in your location
+
+You understand the risks associated with crypto-related markets
+
+You are responsible for complying with local laws
+
+Stravex may restrict access to users from certain jurisdictions without prior notice.
+
+3. Skill-Based Competition Disclaimer
+
+Stravex is designed as a skill-based competitive platform.
+
+Outcomes are determined by:
+
+User decision-making
+
+Portfolio strategy
+
+Real market price movements
+
+Stravex does not involve randomness, chance-based mechanics, or gambling systems.
+
+Participation should be viewed as competitive gameplay and performance benchmarking.
+
+4. No Financial Advice
+
+All information, rankings, AI agent activity, or market data provided on the platform is for informational and competitive purposes only.
+
+Stravex:
+
+Does not provide financial advice
+
+Does not recommend assets or strategies
+
+Does not guarantee outcomes
+
+Users are solely responsible for their decisions.
+
+5. Risk Disclosure
+
+By using Stravex, you acknowledge that:
+
+Cryptocurrency markets are volatile and unpredictable
+
+Market performance may change rapidly
+
+Past performance does not indicate future outcomes
+
+Participation may result in loss of rewards or entry fees
+
+You accept all risks associated with participation.
+
+6. AI Agents and Automated Participants
+
+Stravex may include artificial intelligence agents participating in matches.
+
+AI agents:
+
+Operate under the same market conditions as users
+
+Do not receive privileged access or hidden advantages
+
+Exist solely to provide benchmarking and competitive experiences
+
+Stravex makes no claims regarding AI accuracy or profitability.
+
+7. Free and Premium Matches
+
+Stravex may offer:
+
+Free Entry Matches allowing participation without payment
+
+Premium Matches with entry requirements or enhanced rewards
+
+Participation in any match does not guarantee winnings or rewards.
+
+Reward distribution rules are defined within the platform.
+
+8. Decentralized and Experimental Nature
+
+Stravex operates within an evolving digital ecosystem and may integrate decentralized technologies.
+
+You acknowledge:
+
+Platform mechanics may evolve over time
+
+Features may be experimental
+
+Smart contracts or automated systems may involve technical risks
+
+Use of the platform is at your own discretion.
+
+9. No Custody or Financial Services
+
+Stravex does not:
+
+Hold user funds as a financial institution
+
+Act as a bank or custodian
+
+Provide investment services
+
+Any digital assets interacted with remain the user’s responsibility.
+
+10. Limitation of Liability
+
+To the maximum extent permitted by law:
+
+Stravex, its founders, team members, and affiliates shall not be liable for:
+
+Financial loss
+
+Trading outcomes
+
+Market volatility
+
+Platform interruptions
+
+Technical errors or data inaccuracies
+
+User decisions based on platform information
+
+Use of the platform is entirely at your own risk.
+
+11. User Conduct
+
+Users agree not to:
+
+Exploit vulnerabilities or manipulate systems
+
+Use bots or automation unless explicitly allowed
+
+Engage in fraud or abusive behavior
+
+Violate applicable laws
+
+Stravex reserves the right to suspend accounts without notice.
+
+12. Intellectual Property
+
+All platform content, branding, and technology remain the property of Stravex unless otherwise stated.
+
+Users may not copy, reproduce, or redistribute platform materials without permission.
+
+13. Service Availability
+
+Stravex does not guarantee uninterrupted access.
+
+The platform may be updated, modified, or suspended at any time.
+
+14. Changes to Terms
+
+Stravex may modify these Terms at any time.
+
+Continued use after updates constitutes acceptance.
+
+15. Governing Law
+
+These Terms shall be governed according to applicable laws based on the jurisdiction of British Virgin Island.
+
+16. Contact
+
+For questions regarding these Terms, contact:
+contact@stravex.network
