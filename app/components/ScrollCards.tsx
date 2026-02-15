@@ -55,6 +55,76 @@ const RealMarketData = () => {
     );
 };
 
+const FreeEntryAnimation = () => {
+    return (
+        <div className="relative h-full w-full bg-black/20 flex items-center justify-center overflow-hidden">
+            {/* Floating particles */}
+            {[...Array(6)].map((_, i) => (
+                <motion.div
+                    key={i}
+                    className="absolute w-2 h-2 rounded-full"
+                    style={{
+                        background: i % 2 === 0 ? '#8A2BE2' : '#00F0FF',
+                        left: `${15 + i * 15}%`,
+                        top: `${20 + (i % 3) * 25}%`,
+                    }}
+                    animate={{
+                        y: [-10, 10, -10],
+                        opacity: [0.3, 0.8, 0.3],
+                        scale: [0.8, 1.2, 0.8],
+                    }}
+                    transition={{
+                        duration: 2 + i * 0.3,
+                        repeat: Infinity,
+                        ease: 'easeInOut',
+                        delay: i * 0.2,
+                    }}
+                />
+            ))}
+
+            {/* Ticket shape */}
+            <motion.div
+                className="relative"
+                initial={{ scale: 0, rotate: -10 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                viewport={{ once: true }}
+                transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+            >
+                {/* Glow behind ticket */}
+                <motion.div
+                    className="absolute inset-0 rounded-2xl blur-xl"
+                    style={{ background: 'linear-gradient(135deg, #8A2BE2, #00F0FF)' }}
+                    animate={{ opacity: [0.2, 0.5, 0.2] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                />
+
+                <div className="relative w-36 h-24 rounded-2xl border-2 border-dashed border-white/30 bg-black/40 backdrop-blur-sm flex flex-col items-center justify-center gap-1 overflow-hidden">
+                    {/* Notch cutouts */}
+                    <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-[#18181b]" />
+                    <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-[#18181b]" />
+
+                    <motion.div
+                        className="text-2xl font-black bg-clip-text text-transparent"
+                        style={{ backgroundImage: 'linear-gradient(135deg, #8A2BE2, #00F0FF)' }}
+                        animate={{ scale: [1, 1.1, 1] }}
+                        transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+                    >
+                        FREE
+                    </motion.div>
+                    <div className="text-[10px] text-white/50 font-medium tracking-widest uppercase">Entry Pass</div>
+
+                    {/* Shine sweep */}
+                    <motion.div
+                        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
+                        animate={{ x: ['-100%', '200%'] }}
+                        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', repeatDelay: 1 }}
+                    />
+                </div>
+            </motion.div>
+        </div>
+    );
+};
+
 const RankAnimation = () => {
     return (
         <div className="relative h-full w-full bg-black/20 flex flex-col justify-center px-12 gap-4">
@@ -213,6 +283,13 @@ const capabilities = [
         gradientFrom: '#00F0FF',
         gradientTo: '#00E699',
         animation: RealMarketData,
+    },
+    {
+        title: 'Free Entry Matches',
+        description: 'Compete and earn rewards in zero-cost matches designed to help players build skill before entering premium competition.',
+        gradientFrom: '#8A2BE2',
+        gradientTo: '#00F0FF',
+        animation: FreeEntryAnimation,
     },
     {
         title: 'Transparent Rankings',
