@@ -33,9 +33,9 @@ const ContactPage = () => {
     ]
 
     const socials = [
-        { icon: FaTwitter, label: 'Twitter', href: '#' },
-        { icon: FaMedium, label: 'Medium', href: '#' },
-        { icon: FaTelegram, label: 'Telegram', href: '#' },
+        { icon: FaTwitter, label: 'Twitter', href: 'https://x.com/stravexnetwork' },
+        { icon: FaMedium, label: 'Medium', href: 'https://stravex.medium.com' },
+        { icon: FaTelegram, label: 'Telegram', href: 'https://t.me/stravexnetwork' },
     ]
 
     return (

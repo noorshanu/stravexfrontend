@@ -1,0 +1,170 @@
+Stravex Privacy Policy
+
+Effective Date: 15 February 2026
+Jurisdiction: British Virgin Islands
+
+Stravex (“Stravex”, “we”, “our”, or “us”) is committed to protecting your privacy. This Privacy Policy explains how information is collected, used, stored, and protected when you access or use the Stravex platform and related services.
+
+By accessing or using Stravex, you agree to this Privacy Policy.
+
+1. Information We Collect
+1.1 Information You Provide
+
+We may collect information you voluntarily provide, including:
+
+Username or profile information
+
+Email address or contact details
+
+Wallet addresses or blockchain identifiers
+
+Communications with support or the platform
+
+1.2 Automatically Collected Information
+
+When you use Stravex, certain information may be collected automatically, including:
+
+Device and browser information
+
+IP address and technical logs
+
+Platform activity and match participation data
+
+Interaction data and usage analytics
+
+1.3 Blockchain Data
+
+Because Stravex may interact with blockchain systems:
+
+Wallet addresses and transaction data may be publicly visible
+
+Blockchain records are immutable and not controlled by Stravex
+
+Users are responsible for managing their own wallet privacy
+
+2. How We Use Information
+
+We use collected data to:
+
+Operate and improve the platform
+
+Facilitate matches and rankings
+
+Maintain fairness and prevent abuse
+
+Provide user support
+
+Analyze product performance and user behavior
+
+Comply with legal obligations
+
+Stravex does not sell personal data to third parties.
+
+3. AI and Analytics Usage
+
+Stravex may use aggregated or anonymized data to:
+
+Improve platform performance
+
+Analyze competitive behavior
+
+Optimize AI agent functionality
+
+Enhance fairness and matchmaking
+
+AI systems do not access private user information beyond what is required for platform functionality.
+
+4. Cookies and Tracking
+
+We may use cookies or similar technologies to:
+
+Improve user experience
+
+Understand platform usage
+
+Maintain session functionality
+
+Enhance security
+
+You may disable cookies through your browser settings, but some features may be affected.
+
+5. Data Sharing
+
+We may share information only when necessary:
+
+Service providers supporting platform operations
+
+Analytics or infrastructure partners
+
+Legal or regulatory authorities when required by law
+
+We do not sell or rent user data.
+
+6. Data Storage and Security
+
+We implement reasonable technical and organizational measures to protect information.
+
+However, users acknowledge that:
+
+No system is completely secure
+
+Internet transmissions carry inherent risks
+
+Blockchain transactions cannot be reversed or deleted
+
+7. Data Retention
+
+We retain data only as long as necessary to:
+
+Operate the platform
+
+Comply with legal obligations
+
+Resolve disputes or enforce agreements
+
+Aggregated or anonymized data may be retained indefinitely for analytics purposes.
+
+8. User Rights
+
+Depending on applicable laws, users may have rights to:
+
+Request access to personal data
+
+Request correction or deletion
+
+Withdraw consent where applicable
+
+Requests may be submitted through official support channels.
+
+9. Third-Party Services
+
+Stravex may integrate with third-party services or wallets.
+
+We are not responsible for the privacy practices of external platforms.
+
+Users should review third-party privacy policies separately.
+
+10. International Users
+
+Stravex operates globally. By using the platform, you acknowledge that data may be processed across multiple jurisdictions.
+
+11. Children’s Privacy
+
+Stravex is not intended for individuals under 18 years of age.
+
+We do not knowingly collect data from minors.
+
+12. Changes to This Policy
+
+We may update this Privacy Policy periodically.
+
+Continued use of Stravex after updates constitutes acceptance of the revised policy.
+
+13. Governing Law
+
+This Privacy Policy shall be governed by and interpreted in accordance with the laws of the British Virgin Islands.
+
+14. Contact
+
+For privacy-related questions or requests:
+contact@stravex.network

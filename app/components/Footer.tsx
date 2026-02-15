@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaTwitter, FaDiscord, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa'
+import { FaTwitter, FaTelegram } from 'react-icons/fa'
+import { FaMedium } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a 
-                href="https://twitter.com" 
+                href="https://x.com/stravexnetwork" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -25,35 +26,19 @@ const Footer = () => {
               >
                 <FaTwitter size={24} />
               </a>
+             
+          
               <a 
-                href="https://discord.com" 
+                href="https://stravex.medium.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
-                aria-label="Discord"
+                aria-label="Medium"
               >
-                <FaDiscord size={24} />
+                <FaMedium size={24} />
               </a>
               <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="GitHub"
-              >
-                <FaGithub size={24} />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin size={24} />
-              </a>
-              <a 
-                href="https://telegram.org" 
+                href="https://t.me/stravexnetwork" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -69,12 +54,12 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href=" #how-it-works" className="text-gray-400 hover:text-white transition-colors">
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="live-matches" className="text-gray-400 hover:text-white transition-colors">
                   Live Matches
                 </a>
               </li>
