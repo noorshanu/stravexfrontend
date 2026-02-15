@@ -2,12 +2,12 @@
 
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiMail, FiMapPin, FiClock, FiSend } from 'react-icons/fi'
-import { FaTwitter, FaDiscord, FaTelegram } from 'react-icons/fa'
+import { FiMail,  FiClock, FiSend } from 'react-icons/fi'
+import { FaTwitter, FaTelegram } from 'react-icons/fa'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import FAQ from '../components/FAQ'
-
+import { FaMedium } from "react-icons/fa6";
 const ContactPage = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -27,14 +27,14 @@ const ContactPage = () => {
     }
 
     const contactInfo = [
-        { icon: FiMail, label: 'Email', value: 'support@stravex.com' },
-        { icon: FiMapPin, label: 'Location', value: 'Global • Remote First' },
+        { icon: FiMail, label: 'Email', value: 'contact@stravex.network' },
+        // { icon: FiMapPin, label: 'Location', value: 'Global • Remote First' },
         { icon: FiClock, label: 'Response Time', value: 'Within 24 hours' },
     ]
 
     const socials = [
         { icon: FaTwitter, label: 'Twitter', href: '#' },
-        { icon: FaDiscord, label: 'Discord', href: '#' },
+        { icon: FaMedium, label: 'Medium', href: '#' },
         { icon: FaTelegram, label: 'Telegram', href: '#' },
     ]
 
