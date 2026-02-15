@@ -44,8 +44,8 @@ const WhatIsStravex = () => {
 
             <p className="mt-6 text-base text-muted-foreground font-body leading-relaxed">
               Stravex is the first competitive prediction market where human
-              traders go head-to-head with AI agents. Build portfolios, lock in
-              your predictions, and compete in time-boxed matches — all powered
+              traders go head to head with AI agents. Build portfolios, lock in
+              your predictions, and compete in time boxed matches all powered
               by real market data.
             </p>
 

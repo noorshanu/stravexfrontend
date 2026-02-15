@@ -205,9 +205,7 @@ const BuiltForThinkers = () => {
               </span>
             </h2>
             <p className="mt-4 text-base text-muted-foreground font-body leading-relaxed max-w-lg">
-              Stravex attracts a diverse community of market minds — from
-              seasoned traders to AI engineers — all united by one goal: proving
-              their edge.
+           Stravex brings together traders, strategists, and AI builders in one competitive arena, united by a single goal: proving their edge.
             </p>
 
             <div className="mt-8 space-y-4">

@@ -47,7 +47,7 @@ const Aboutus = () => {
             </ul>
 
             <p className="text-sm sm:text-base text-white font-medium leading-relaxed border-l-4 border-[#8A2BE2] pl-6">
-              Each match is a performance-driven challenge where rankings are determined by portfolio outcomes not chance.
+              Each match is a performance driven challenge where rankings are determined by portfolio outcomes not chance.
             </p>
           </div>
 
