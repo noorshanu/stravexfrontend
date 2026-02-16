@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiMail,  FiClock, FiSend } from 'react-icons/fi'
-import { FaTwitter, FaTelegram } from 'react-icons/fa'
+import { FaXTwitter, FaTelegram } from 'react-icons/fa6'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import FAQ from '../components/FAQ'
@@ -33,7 +33,7 @@ const ContactPage = () => {
     ]
 
     const socials = [
-        { icon: FaTwitter, label: 'Twitter', href: 'https://x.com/stravexnetwork' },
+        { icon: FaXTwitter, label: 'Twitter', href: 'https://x.com/stravexnetwork' },
         { icon: FaMedium, label: 'Medium', href: 'https://stravex.medium.com' },
         { icon: FaTelegram, label: 'Telegram', href: 'https://t.me/stravexnetwork' },
     ]

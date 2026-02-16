@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaTwitter, FaTelegram } from 'react-icons/fa'
+import { FaXTwitter, FaTelegram } from 'react-icons/fa6'
 import { FaMedium } from 'react-icons/fa6'
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Twitter"
               >
-                <FaTwitter size={24} />
+                <FaXTwitter size={24} />
               </a>
              
           
