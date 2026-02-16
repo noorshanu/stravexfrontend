@@ -146,7 +146,7 @@ const FAQ = () => {
                         Can&apos;t find the answer you&apos;re looking for? Our team is here to help.
                     </p>
                     <a
-                        href="#contact-form"
+                        href="mailto:contact@stravex.network"
                         className="inline-block px-6 py-3 bg-white text-[#0a0a0f] font-semibold rounded-xl hover:bg-white/90 transition-colors"
                     >
                         Contact Support

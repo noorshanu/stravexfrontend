@@ -58,14 +58,10 @@ const Footer = () => {
                   How It Works
                 </a>
               </li>
+            
               <li>
-                <a href="live-matches" className="text-gray-400 hover:text-white transition-colors">
-                  Live Matches
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Leaderboard
+                <a href="https://stravex.medium.com" className="text-gray-400 hover:text-white transition-colors">
+              Blog
                 </a>
               </li>
               <li>
@@ -80,21 +76,13 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Support</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="/contact-us" className="text-gray-400 hover:text-white transition-colors">
-                  Help Center
-                </a>
-              </li>
+        
               <li>
                 <a href="/contact-us" className="text-gray-400 hover:text-white transition-colors">
                   Contact Us
                 </a>
               </li>
-              <li>
-                <a href="/contact-us" className="text-gray-400 hover:text-white transition-colors">
-                  FAQ
-                </a>
-              </li>
+           
             </ul>
           </div>
         </div>
